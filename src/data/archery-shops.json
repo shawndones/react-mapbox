@@ -1,0 +1,145 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -86.9195936,
+            36.8836318,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Hunters Den Archery Shop"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.7571156,
+            38.4995346,
+            0
+          ]
+        },
+        "properties": {
+          "name": "On Target Archery and Outdoors"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.6161218,
+            38.9539891,
+            0
+          ]
+        },
+        "properties": {
+          "name": "M & M Archery Range and Pro Shop"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -87.5657741,
+            36.7341091,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Herndon Archery"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.4771304,
+            37.8324758,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Bardstown Mills Archery Pro Shop"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.5238982,
+            37.9999878,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Classic Arms & Archery"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.5431388,
+            37.7098051,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Bent Arrow Archery Shop"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -86.3038697,
+            37.2920155,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Sanders' Archery"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -83.8532609,
+            38.49867,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Fulton Archery"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -85.6936047,
+            36.7003851,
+            0
+          ]
+        },
+        "properties": {
+          "name": "Aaa Outdoors"
+        }
+      }
+    ]
+  }
