@@ -16,7 +16,7 @@ function App() {
   const [lng, setLng] = useState( -106.5496);
   const [lat, setLat] = useState(39.0079);
   const [zoom, setZoom] = useState(6.87);
-  const [wildernessData, setWildernessData] = useState({});
+  // const [wildernessData, setWildernessData] = useState({});
 
 
 
