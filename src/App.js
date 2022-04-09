@@ -2,8 +2,10 @@ import './App.css';
 import React, {useEffect, useRef, useState } from 'react'
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { arcgisToGeoJSON } from "@terraformer/arcgis"
-import coGmus from './data/co-gmu'
+// import { arcgisToGeoJSON } from "@terraformer/arcgis"
+import coGmus from './data/co-gmu.json'
+import coGmusLabels from './data/labels.geojson.json'
+console.log("🚀 ~ file: App.js ~ line 7 ~ coGmus", coGmus);
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 
@@ -35,6 +37,15 @@ function App() {
         'id': 'co-gmus-layer',
         'type': 'line',
         'source': 'co-gmus'
+      })
+      map.current.addSource('co-gmus-labels', {
+        type: 'geojson',
+        data: coGmusLabels
+      })
+      map.current.addLayer({
+        'id': 'co-gmus-labels-layer',
+        'type': 'line',
+        'source': 'co-gmus-labels'
       })
     })
   
