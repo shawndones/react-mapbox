@@ -3,9 +3,9 @@ import React, {useEffect, useRef, useState } from 'react'
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import 'mapbox-gl/dist/mapbox-gl.css';
 // import { arcgisToGeoJSON } from "@terraformer/arcgis"
-import coGmus from './data/co-gmu.json'
+// import coGmus from './data/co-gmu.json'
 // import coGmusLabels from './data/labels.geojson.json'
-console.log("🚀 ~ file: App.js ~ line 7 ~ coGmus", coGmus);
+// console.log("🚀 ~ file: App.js ~ line 7 ~ coGmus", coGmus);
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 
@@ -28,26 +28,26 @@ function App() {
       center: [lng, lat],
       zoom: zoom
     });
-    map.current.on('load', () => {
-      map.current.addSource('co-gmus', {
-        type: 'geojson',
-        data: "http://shawndones.com/mapdata/co-gmu.json"
-      })
-      map.current.addLayer({
-        'id': 'co-gmus-layer',
-        'type': 'line',
-        'source': 'co-gmus'
-      })
-      map.current.addSource('co-gmus-labels', {
-        type: 'geojson',
-        data: "http://shawndones.com/mapdata/labels.geojson.json"
-      })
-      map.current.addLayer({
-        'id': 'co-gmus-labels-layer',
-        'type': 'line',
-        'source': 'co-gmus-labels'
-      })
-    })
+    // map.current.on('load', () => {
+    //   map.current.addSource('co-gmus', {
+    //     type: 'geojson',
+    //     data: "http://shawndones.com/mapdata/co-gmu.json"
+    //   })
+    //   map.current.addLayer({
+    //     'id': 'co-gmus-layer',
+    //     'type': 'line',
+    //     'source': 'co-gmus'
+    //   })
+    //   map.current.addSource('co-gmus-labels', {
+    //     type: 'geojson',
+    //     data: "http://shawndones.com/mapdata/labels.geojson.json"
+    //   })
+    //   map.current.addLayer({
+    //     'id': 'co-gmus-labels-layer',
+    //     'type': 'line',
+    //     'source': 'co-gmus-labels'
+    //   })
+    // })
   
     // set contour lines to feet instead of meters
     // map.current.on('load', function(){
