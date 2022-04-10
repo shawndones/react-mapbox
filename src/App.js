@@ -28,26 +28,26 @@ function App() {
       center: [lng, lat],
       zoom: zoom
     });
-    // map.current.on('load', () => {
-    //   map.current.addSource('co-gmus', {
-    //     type: 'geojson',
-    //     data: "http://shawndones.com/mapdata/co-gmu.json"
-    //   })
-    //   map.current.addLayer({
-    //     'id': 'co-gmus-layer',
-    //     'type': 'line',
-    //     'source': 'co-gmus'
-    //   })
-    //   map.current.addSource('co-gmus-labels', {
-    //     type: 'geojson',
-    //     data: "http://shawndones.com/mapdata/labels.geojson.json"
-    //   })
-    //   map.current.addLayer({
-    //     'id': 'co-gmus-labels-layer',
-    //     'type': 'line',
-    //     'source': 'co-gmus-labels'
-    //   })
-    // })
+    map.current.on('load', () => {
+      map.current.addSource('co-gmus', {
+        type: 'geojson',
+        data: "http://shawndones.com/mapdata/co-gmu.json"
+      })
+      map.current.addLayer({
+        'id': 'co-gmus-layer',
+        'type': 'line',
+        'source': 'co-gmus'
+      })
+      map.current.addSource('co-gmus-labels', {
+        type: 'geojson',
+        data: "http://shawndones.com/mapdata/labels.geojson.json"
+      })
+      map.current.addLayer({
+        'id': 'co-gmus-labels-layer',
+        'type': 'line',
+        'source': 'co-gmus-labels'
+      })
+    })
   
     // set contour lines to feet instead of meters
     // map.current.on('load', function(){
