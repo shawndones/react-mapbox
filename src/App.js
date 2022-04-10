@@ -4,7 +4,7 @@ import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-load
 import 'mapbox-gl/dist/mapbox-gl.css';
 // import { arcgisToGeoJSON } from "@terraformer/arcgis"
 import coGmus from './data/co-gmu.json'
-import coGmusLabels from './data/labels.geojson.json'
+// import coGmusLabels from './data/labels.geojson.json'
 console.log("🚀 ~ file: App.js ~ line 7 ~ coGmus", coGmus);
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
