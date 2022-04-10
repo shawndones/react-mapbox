@@ -31,7 +31,7 @@ function App() {
     map.current.on('load', () => {
       map.current.addSource('co-gmus', {
         type: 'geojson',
-        data: coGmus
+        data: "http://shawndones.com/mapdata/co-gmu.json"
       })
       map.current.addLayer({
         'id': 'co-gmus-layer',
@@ -40,7 +40,7 @@ function App() {
       })
       map.current.addSource('co-gmus-labels', {
         type: 'geojson',
-        data: coGmusLabels
+        data: "http://shawndones.com/mapdata/labels.geojson.json"
       })
       map.current.addLayer({
         'id': 'co-gmus-labels-layer',
